@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Anton&family=Delius&family=Macondo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Anton&family=Antonio:wght@100..700&family=Delius&family=Macondo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 51%) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 238, 0, 37%) 100%);
+    margin: auto;
+    padding: 4px 12px;
+    font-size: 19px;
+    top: 2rem;
+    border-radius: 30px;
+    /* box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px; */
+
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav button {
+    padding: 12px;
+    border-radius: 17px;
+    font-size: 19px;
+    background: hsla(42, 93%, 57%, 1);
+    background: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+    border: 2px solid rgba(2, 0, 36, 25%);
+}
+
+#home {
+    height: 100vh;
+}
+
+.home-section {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home-container div h1 {
+    color: rgb(248, 146, 2);
+    font-size: 5rem;
+}
+
+.home-container div h3 {
+    font-size: 3rem;
+}
+
+.home-section .buttons button {
+    padding: 14px 42px;
+    font-size: 19px;
+    border-radius: 22px;
+    width: 15rem;
+    margin-top: 5rem;
+    color: black;
+}
+
+.socials img {
+    width: 3rem;
+
+}
+
+.socials {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+
+}
+
+
+.photo img {
+    width: 24rem;
+    margin-top: 189px;
+    transform: scale(1.5);
+    /* filter: grayscale(); */
+    margin-top: 23rem;
+}
+
+
+/* about section stylling  */
+
+
+.about-section {
+    background: url(./assets/Gemini_Generated_Image_n1rg7on1rg7on1rg.png) no-repeat center center/cover;
+    height: fit-content;
+}
+
+
+/* timeline element stylling */
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience .content p {
+    color: white;
+}
+
+.education .content h2,
+p {
+    color: black;
+}
+
+.experience .content {
+    background-color: #FF9F55;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.about-section .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.about-section .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+
+
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+
+
+/* about section stylling  */
+
+.about-section .title {
+    font-size: 12rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact p {
+    color: white;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description p {
+    font-size: 4rem;
+    line-height: 55px;
+    font-size: 26px;
+    font-weight: bold;
+    width: 39rem;
+
+}
+
+.desc-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-content .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc-content .socials label {
+    font-size: 12px;
+    font-size: 20px;
+}
+
+.a-sec-title {
+    width: fit-content;
+    padding: 42px;
+    font-size: 54px;
+    margin: auto;
+    font-weight: bold;
+}
+
+/* project-section stylling  */
+
+
+.project-main-container {
+    background: url(./assets/Gemini_Generated_Image_9rvklq9rvklq9rvk.png) no-repeat center center/cover;
+    height: fit-content
+}
+
+.project-main-container .title {
+    margin-bottom: 3rem;
+    font-size: 12rem;
+    text-align: center;
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.project-container {
+    /* margin-left: 11rem; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    column-gap: 7rem;
+    grid-template-columns: auto auto;
+
+
+}
+
+
+.project-container .card img {
+    width: 30rem;
+
+}
+
+.card p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.card {
+    border-radius: 20px;
+    /* border: 15px solid green; */
+}
+
+.card .git-button {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border-radius: 29px;
+}
+
+#tsc .img {
+    height: 16rem;
+}
+
+.card {
+  width: fit-content;
+  /* padding: 1rem; */
+  /* position: relative; */
+  background: linear-gradient(to right, rgb(9, 9, 9), rgb(118, 115, 118));
+  padding: 10px;
+}
+
+
+/* form styliing */
+
+.connect  .title{
+    margin-bottom: 3rem;
+    font-size: 12rem;
+    text-align: center;
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.connect  .soc-sec{
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+ width: 3rem;
+}
+
+.connect  .soc-sec img{
+ width: 3rem;
+}
+
+.email-num img{
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+form input{
+    padding: 18px 101px;
+    border-radius: 15px;
+}
+
+input,textarea::placeholder{
+    font-size: 20px;
+}
+
+textarea{
+    height: 122px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+
+.connect .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px
+}
+
+.connect{
+    background: url(./assets/image.jpg);
+}
+
+form button{
+    color: white;
+    background-color: blue;
+    padding: 12px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.email-num{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.email-num div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* footer stylling  */
+footer{
+    background: url(./assets/Gemini_Generated_Image_veesxzveesxzvees.png) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div{
+    font-weight: 200;
+    padding: 4px;
+}
+
+footer .footer-sec-title{
+    display: flex;
+    color: black;
+}
