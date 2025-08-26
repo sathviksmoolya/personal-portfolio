@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./res.css">
     <title>Document</title>
 </head>
 
@@ -26,7 +27,7 @@
                 </a>
 
             </ul>
-            <button>Contact</button>
+            <button onclick="window.location.href='#contact'" class="mybtn">Contact</button>
         </nav>
 
         <div id="home" class="home-section">
@@ -39,7 +40,7 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <button><a href="contact">Contact</a></button>
+                    <button onclick="window.location.href='#contact'">Contact</button>
                     <button>Download CV</button>
                 </div>
                 <div class="socials">
@@ -138,56 +139,45 @@
                 <div class="card">
                     <img src="./assets/projects/Screenshot (96).png" alt="">
                     <p>Grocery Delivery Application</p>
-                    <div class="git-button">
-                        <a href="https://github.com/sathviksmoolya/knitebyte-frontend"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
-                    </div>
+                     <a class="git-button" href="https://github.com/sathviksmoolya/knitebyte-frontend"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
                 </div>
                 <div class="card">
                     <img src="./assets/projects/Screenshot (171).png" alt="">
                     <p>Early Depression Detection Using Machine Learning</p>
-                    <div class="git-button">
-                        <a href="https://github.com/samridh9/Early-Depression-Detection-using-Machine-Learning"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
-                    </div>
+                    <a class="git-button" href="https://github.com/samridh9/Early-Depression-Detection-using-Machine-Learning"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
                 </div>
                 <div id="tsc" class="card">
                     <img class="img" src="./assets/projects/color-wheel_8478776.png" alt="">
                     <p>Tech Stack Identifier Chrome Extension</p>
-                    <div class="git-button">
-                        <a href="https://github.com/sathviksmoolya/tech-stack-identifier"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
-                    </div>
+                    
+                    <a class="git-button" href="https://github.com/sathviksmoolya/tech-stack-identifier"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
                 </div>
                 <div class="card">
                     <img src="./assets/projects/Screenshot (275).png" alt="">
                     <p>Web Music Player</p>
-                    <div class="git-button">
-                        <a href="https://github.com/sathviksmoolya/music_player"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
-                    </div>
+                    <a class="git-button" href="https://github.com/sathviksmoolya/music_player"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
                 </div>
                 <div class="card">
                     <img src="./assets/projects/Screenshot (167).png" alt="">
                     <p>Text Modifiaction Tool</p>
-                    <div class="git-button">
-                        <a href="https://github.com/sathviksmoolya/text-modify-react-app"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
-                    </div>
+                    <a class="git-button" href="https://github.com/sathviksmoolya/text-modify-react-app"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
                 </div>
                 <div class="card">
                     <img src="./assets/projects/Screenshot (99).png" alt="">
-                    <p>Ezy Task - Daily Task Planner</p>
-                    <div class="git-button">
-                        <a href="https://github.com/sathviksmoolya/todo-app-react"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
-                    </div>
+                    <p>Ezy Task - Daily Task Planne</p>
+                    <a class="git-button" href="https://github.com/sathviksmoolya/todo-app-react"><img style="width:3rem" src="./assets/icons/github_733609.png" alt="github"></a>
                 </div>
             </div>
 
         </div>
 
-        <div  class="connect">
-            <h3 id="contact"  class="title">CONNECT WITH ME</h3>
+        <div id="contact"  class="connect">
+            <h3 class="title">CONNECT WITH ME</h3>
             <div class="form">
-                <form action="">
-                    <input type="text" placeholder="Enter your name">
-                    <input type="email" placeholder="enter Your email">
-                    <textarea placeholder="Type your message..." name="" id=""></textarea>
+                <form action="https://formspree.io/f/xgvlenee" method="post">
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="email" name="email" placeholder="enter Your email">
+                    <textarea placeholder="Type your message..." name="message" id=""></textarea>
                     <button type="submit">Send Now</button>
                 </form>
                 <div class="mysection">
@@ -224,6 +214,7 @@
         </footer>
 
     </div>
+    <script src="./scripts.js"></script>
     <script src="three.r134.min.js"></script>
     <script src="vanta.net.min.js"></script>
     <script type="text/javascript">

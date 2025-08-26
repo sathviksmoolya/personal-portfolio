@@ -13,6 +13,11 @@
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 nav {
     position: fixed;
     z-index: 2;
@@ -37,6 +42,13 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+}
+
+nav a li:hover {
+    transition: all 0.3s;
+    font-weight: bold;
+    transform: scale(1.2);
+    
 }
 
 nav ul {
@@ -83,6 +95,17 @@ nav button {
     margin-top: 5rem;
     color: black;
 }
+
+.home-section .buttons button:first-child {
+    border: 5px solid rgb(194, 245, 12);
+}
+
+.home-section .buttons button:last-child {
+    background: linear-gradient(to right, red, blue);
+    color: white;
+
+}
+
 
 .socials img {
     width: 3rem;
@@ -238,11 +261,11 @@ p {
     }
 
     /* Full-width containers */
-    .container {
+    /* .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
-    }
+    } */
 
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
@@ -301,7 +324,7 @@ p {
     line-height: 55px;
     font-size: 26px;
     font-weight: bold;
-    width: 39rem;
+    min-width: 39rem;
 
 }
 
@@ -391,17 +414,17 @@ p {
 }
 
 .card {
-  width: fit-content;
-  /* padding: 1rem; */
-  /* position: relative; */
-  background: linear-gradient(to right, rgb(9, 9, 9), rgb(118, 115, 118));
-  padding: 10px;
+    width: fit-content;
+    /* padding: 1rem; */
+    /* position: relative; */
+    background: linear-gradient(to right, rgb(9, 9, 9), rgb(118, 115, 118));
+    padding: 10px;
 }
 
 
 /* form styliing */
 
-.connect  .title{
+.connect .title {
     margin-bottom: 3rem;
     font-size: 12rem;
     text-align: center;
@@ -410,59 +433,63 @@ p {
     font-style: normal;
 }
 
-.connect  .soc-sec{
+.connect .soc-sec {
     margin-top: 4rem;
     display: flex;
     gap: 2rem;
- width: 3rem;
+    width: 3rem;
 }
 
-.connect  .soc-sec img{
- width: 3rem;
+.connect .soc-sec img {
+    width: 3rem;
 }
 
-.email-num img{
+.email-num img {
     width: 3rem;
     align-items: center;
     justify-content: center;
     /* display: flex; */
 }
 
-form{
+form {
+    
     display: flex;
     flex-direction: column;
     gap: 12px;
-    
+
 }
 
-form input{
+form input {
+    color: black;
     padding: 18px 101px;
     border-radius: 15px;
 }
 
-input,textarea::placeholder{
+input,
+textarea::placeholder {
     font-size: 20px;
 }
 
-textarea{
+textarea {
+    color: black;
     height: 122px;
     padding: 12px;
     border-radius: 12px;
 }
 
 
-.connect .form{
+.connect .form {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px
 }
 
-.connect{
+.connect {
     background: url(./assets/image.jpg);
 }
 
-form button{
+form button {
     color: white;
     background-color: blue;
     padding: 12px 0px;
@@ -472,13 +499,13 @@ form button{
     margin-bottom: 12px;
 }
 
-.email-num{
+.email-num {
     display: flex;
     flex-direction: column;
     gap: 34px;
 }
 
-.email-num div{
+.email-num div {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -486,7 +513,7 @@ form button{
 
 
 /* footer stylling  */
-footer{
+footer {
     background: url(./assets/Gemini_Generated_Image_veesxzveesxzvees.png) no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -494,12 +521,20 @@ footer{
     justify-content: center;
 }
 
-footer div{
+footer div {
     font-weight: 200;
     padding: 4px;
 }
 
-footer .footer-sec-title{
+footer .footer-sec-title {
     display: flex;
     color: black;
 }
+
+
+
+/* ========================================================================================================================================================== */
+
+
+/* mobile responsive */
+

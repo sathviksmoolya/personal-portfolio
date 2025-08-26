@@ -1,0 +1,165 @@
+@media (max-width:576px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    /* nav section  */
+
+    nav {
+        padding: 16px;
+    }
+
+
+    nav button {
+        display: none;
+    }
+
+    /* home section  */
+    .home-section .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .home-section .buttons button{
+        margin-bottom: 2rem;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+/* about section  */
+
+.about-section .title {
+    font-size: 77px;
+}
+
+.description {
+    flex-direction: column;
+
+}
+
+.description p {
+    width: 12px;
+    padding: 0px 49px;
+    scale: 0.6;
+}
+
+.socials {
+    margin-top: 0rem;
+}
+
+.description .bio-pic img {
+    width: 24rem;
+}
+
+.desc-content .socials {
+    flex-direction: column;
+}
+
+.content {
+    padding: 15px;
+    width: 17rem;
+}
+
+/* project section  */
+
+.project-main-container .title {
+    font-size: 77px;
+}
+
+.project-container {
+    grid-template-columns: auto;
+    padding: 15px;
+}
+
+.project-container .card img {
+    width: 100%;
+}
+
+
+/* connect with me section  */
+
+.connect .title {
+    font-size: 77px;
+}
+
+.connect .form {
+    flex-direction: column;
+}
+
+.connect .soc-sec {
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 16px;
+}
+
+
+/* footer section  */
+footer .footer-sec-title {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #projects {
+        display: none;
+    } */
+
+/* #contact {
+        display: none;
+    } */
+
+
+
+}
