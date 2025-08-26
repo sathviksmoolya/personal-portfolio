@@ -1,4 +1,4 @@
-@media (max-width:576px) {
+@media (max-width:1224px) {
 
     * {
         padding: 0;
@@ -170,4 +170,12 @@
     } */
 
 
+}
+
+@media (max-width:501px){
+    .home-section .buttons{
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
